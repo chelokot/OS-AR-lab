@@ -151,6 +151,7 @@
                 mainContainer = new THREE.Group();
                 if(window.location.hash != "#lab2")
                     {
+                    console.log(window.location.hash);
                     // Массив имён файлов .patt. Массив заполняется в порядке добавления маркеров
                     // если вместо .patt был добавлен баркод, на его место в массив добавляется пустая строка
                     patternNames = ["" ,"" ,""];
@@ -160,6 +161,7 @@
                     }
                 else
                     {
+                    console.log(window.location.hash);
                     patternNames   = ["", "", "pattern-3.patt"];
                     patternBarcode = [41, 42, -1];
                     }
